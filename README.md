@@ -2,6 +2,14 @@
 
 Self-hosted monitoring and observability dashboard for Laravel applications. Track requests, queries, exceptions, jobs, and more — all within your own infrastructure.
 
+## Screenshots
+
+### Server Monitoring
+![Server Monitoring](screenshots/server-monitoring.png)
+
+### Htop Monitor
+![Htop Monitor](screenshots/htop-monitor.png)
+
 ## Requirements
 
 - PHP 8.2+
