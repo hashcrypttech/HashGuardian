@@ -12,12 +12,17 @@
         "telescope-alternative"
     ],
     "homepage": "https://github.com/hashcrypttech/HashGuardian",
+    "support": {
+        "issues": "https://github.com/hashcrypttech/HashGuardian/issues",
+        "source": "https://github.com/hashcrypttech/HashGuardian"
+    },
     "license": "MIT",
     "type": "library",
     "authors": [
         {
-            "name": "HashCrypt Tech",
-            "homepage": "https://github.com/hashcrypttech"
+            "name": "Hashcrypt Technologies Pvt. Ltd.",
+            "email": "contact@hashcrypt.com",
+            "homepage": "https://hashcrypt.com"
         }
     ],
     "require": {

@@ -179,6 +179,15 @@ php artisan vendor:publish --tag=hashguardian-assets
 php artisan vendor:publish --tag=hashguardian-provider
 ```
 
+## About
+
+HashGuardian is developed and maintained by [Hashcrypt Technologies Pvt. Ltd.](https://hashcrypt.com/), a software development company based in Rajkot, Gujarat, India.
+
+- **Website:** [https://hashcrypt.com](https://hashcrypt.com)
+- **Email:** contact@hashcrypt.com
+- **Phone:** +91 90332 72899
+- **Address:** 3rd Floor, United Square, Nana Mava Rd, Karan Park, Rajkot, Gujarat 360001
+
 ## License
 
 HashGuardian is open-sourced software licensed under the [MIT license](LICENSE).
