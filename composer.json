@@ -1,0 +1,61 @@
+{
+    "name": "hashcrypttech/hashguardian",
+    "description": "Self-hosted monitoring and observability dashboard for Laravel applications",
+    "keywords": [
+        "laravel",
+        "monitoring",
+        "observability",
+        "logging",
+        "debugging",
+        "performance",
+        "dashboard",
+        "telescope-alternative"
+    ],
+    "homepage": "https://github.com/hashcrypttech/HashGuardian",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "HashCrypt Tech",
+            "homepage": "https://github.com/hashcrypttech"
+        }
+    ],
+    "require": {
+        "php": "^8.2",
+        "illuminate/contracts": "^11.0|^12.0",
+        "illuminate/support": "^11.0|^12.0",
+        "illuminate/database": "^11.0|^12.0",
+        "illuminate/http": "^11.0|^12.0",
+        "illuminate/routing": "^11.0|^12.0",
+        "illuminate/console": "^11.0|^12.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^9.0|^10.0",
+        "phpunit/phpunit": "^11.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Hashcrypttech\\HashGuardian\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Hashcrypttech\\HashGuardian\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Hashcrypttech\\HashGuardian\\HashGuardianServiceProvider"
+            ],
+            "aliases": {
+                "HashGuardian": "Hashcrypttech\\HashGuardian\\Facades\\HashGuardian"
+            }
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

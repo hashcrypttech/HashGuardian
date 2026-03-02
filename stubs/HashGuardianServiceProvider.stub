@@ -1,0 +1,38 @@
+<?php
+
+namespace App\Providers;
+
+use Illuminate\Support\Facades\Gate;
+use Illuminate\Support\ServiceProvider;
+use Hashcrypttech\HashGuardian\Facades\HashGuardian;
+
+class HashGuardianServiceProvider extends ServiceProvider
+{
+    public function boot(): void
+    {
+        $this->gate();
+
+        // HashGuardian::filter(function ($entry) {
+        //     return true;
+        // });
+    }
+
+    protected function gate(): void
+    {
+        Gate::define('viewHashGuardian', function ($user) {
+            return in_array($user->email, [
+                //
+            ]);
+        });
+
+        HashGuardian::auth(function ($request) {
+            return app()->environment('local')
+                || Gate::check('viewHashGuardian', [$request->user()]);
+        });
+    }
+
+    public function register(): void
+    {
+        //
+    }
+}
